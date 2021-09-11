@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>buttons</title>
+
+  </head>
+  <body>
+    <!--how to use button-->
+    <button class="favorites styled"type="button">Add to favorites</button><br><br>
+
+     <!--datalist buttons-->
+    <label for="ice cream choice">Choose a flavor</label>
+    <input list="ice cream flavor" id="ice cream choice" name="ice cream choice">
+
+    <datalist id="ice cream flavor">
+      <option value="Chocolate"></option>
+      <option value="coconut"></option>
+      <option value="Mint"></option>
+      <option value="vanilla"></option>
+  </datalist><br><br>
+
+    <!--input-->
+  <label for="name">Name (4 to 8 characters):</label><br><br>
+<input type="text" id="name" name="name" required minlength="4" maxlength="8" size="10"><br>
+
+<!--input type checkbox-->
+<p>Choose your monster features</p>
+
+<div>
+  <input type="checkbox" id="scales" name="scales" checked>
+  <label for="scales">Scales</label><br>
+
+  <input type="checkbox" id="horns" name="horns">
+  <label for="horns">Horns</label>
+
+</div>
+
+<!--input type color-->
+
+<p>Choose your monster color</p>
+
+<div>
+  <input type="color" id="body" name="body" value="#e66465">
+  <label for="body">Body</label><br><br>
+
+  <input type="color" id="head" name="head" value="#f6b73c">
+  <label for="head">Head</label>
+
+</div><br><br>
+
+<!--input type date-->
+<label for="start">Start Date</label>
+<input type="date" id="start" name="trip-start" value="2021-09-10"
+min="2021-01-01" max="2021-12-31"><br><br>
+
+<!--input type date and time -->
+<label for="meeting-time">Choose a time for your appointment:</label><br>
+<input type="datetime-local" id="meeting-time" name="meeting-time" value="2021-09-10T13:39"
+min="2021-01-01T00:00" max="2021-12-31T00:00"><br><br>
+
+<!--input type email -->
+<label for="email">Enter your globex.com email</label>
+<input type="email" id="email" pattern=".+@globex\.com" size="30"required><br><br>
+
+<!--input type file -->
+<label for="avatar">Choose a profile picture</label><br>
+<input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg"><br><br>
+
+<!-- input type image -->
+<p>Sign into your account</p>
+
+<div>
+  <label for="userid">User ID</label>
+  <input type="text" id="userId" name="userId">
+</div>
+
+<input type="image" id="image" alt="Login" src="/media/example/login-button.png"><br><br>
+
+<!--input type month -->
+
+<label for=start">Start month</label>
+<input type="month" id="start" name="Start" min="2021-09" value="2021-09"><br><br>
+
+<!--input type password -->
+<div>
+  <label for="username">username</label><br>
+  <input type="text" id="username" name="username">
+</div><br>
+<div>
+  <label for="password">Password (8 characters minimum)</label><br>
+  <input type="text" id="password" name="password" minlength="8"required>
+  </div><br>
+  <input type="submit" value="sign in">
+
+
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
